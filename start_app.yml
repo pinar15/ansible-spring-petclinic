@@ -1,0 +1,6 @@
+- hosts: all
+  tasks:
+  - name: Start App
+    shell: 'pkill java & nohup java -jar target/*.jar &'
+    args:
+      chdir: /spring

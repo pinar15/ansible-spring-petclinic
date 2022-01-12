@@ -1,0 +1,6 @@
+- hosts: all
+  tasks:
+  - name: Clone Repo
+    git:
+      repo: https://github.com/ikambarov/spring-petclinic.git
+      dest: /spring

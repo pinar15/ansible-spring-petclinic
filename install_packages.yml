@@ -1,0 +1,9 @@
+- hosts: all
+  tasks:
+  - name: Install Prerequisites
+    import_role:
+      name: ansible-role-prerequisites
+
+  - name: Install OpenJDK
+    import_role:
+      name: ansible-role-openjdk

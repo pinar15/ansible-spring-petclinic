@@ -1,0 +1,8 @@
+- hosts: all
+  tasks:
+  - name: Run Maven Wrapper
+    shell: "./mvnw package"
+    args:
+      chdir: /spring
+      creates: /spring/target
+      
